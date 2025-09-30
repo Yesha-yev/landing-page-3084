@@ -1,0 +1,155 @@
+:root {
+            --primary-color: #004912;
+            --secondary-color: #00741d;
+            --accent-color: #03c032;
+            --text-light: #f8fafc;
+            --text-dark: #000000;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--text-dark);
+        }
+        .navbar-toggler{
+            color: white;
+        }
+        .hero-section {
+            background: linear-gradient(#00741d, #004912), url('https://picsum.photos/seed/futuretech/1920/1080.jpg');
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh;
+            display: flex;  
+            align-items: center;
+            position: relative;
+        }
+        .container a{
+            color: white;
+        }
+        .navbar {
+            background-color: #004912 !important;
+            padding: 15px 0;
+            transition: all 0.3s ease;
+        }
+        .hero-section{
+            color: white;
+        }
+        .navbar.scrolled {
+            background-color: #004912 !important;
+            box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
+        }
+        .same-size {
+          width: 50%;
+          height: 250px;   
+          object-fit: cover; 
+          border-radius: 15px;
+        }
+        .img-wrap{
+            float: left;
+            margin: 10px;
+            width: 200px;
+            height: auto;
+        }
+        .feature-card {
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+            color: #000000;
+        }
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .testimonial-card {
+            background-color: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            background: linear-gradient(45deg, var(--secondary-color), var(--accent-color));
+            border: none;
+            padding: 15px 35px;
+            border-radius: 50px;
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(59, 246, 115, 0.4);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(59, 246, 115, 0.6);
+        }
+
+        .section-title {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 50px;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 0;
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--secondary-color), var(--accent-color));
+            border-radius: 2px;
+        }
+
+        .progress-bar {
+            height: 8px;
+            border-radius: 4px;
+            background-color: #e2e8f0;
+        }
+
+        .progress-value {
+            height: 8px;
+            border-radius: 4px;
+            background: linear-gradient(90deg, var(--secondary-color), var(--accent-color));
+        }
+
+        .stats-number {
+            font-size: 3rem;
+            font-weight: bold;
+            color: var(--secondary-color);
+        }
+
+        .footer {
+            background-color: var(--primary-color);
+            color: var(--text-light);
+        }
+
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-light);
+            transition: all 0.3s ease;
+        }
+
+        .social-icon:hover {
+            background-color: var(--accent-color);
+            transform: translateY(-3px);
+        }
+
+        @media (max-width: 768px) {
+            .hero-section {
+                min-height: 70vh;
+            }
+            
+            .stats-number {
+                font-size: 2rem;
+            }
+        }
